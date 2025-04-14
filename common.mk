@@ -195,6 +195,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.motorola_lahaina
 
+# MindTheGapps
+  $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/init.qti.media.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.media.sh \
